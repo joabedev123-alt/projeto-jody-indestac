@@ -16,20 +16,35 @@ $(document).ready(function(){
     items: 1,
     loop: true,
     autoplay: true,
-    nav: true,
+    nav: false,
     dots: false
   });
 
-  // Carrossel Clientes/Modelos
+  // Carrossel Clientes/Modelos (Oitavada, Oval, etc)
   $('.clientes-02-lista').owlCarousel({
     loop: true,
     margin: 20,
-    nav: true,
+    nav: false,
     autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: false,
+    lazyLoad: true,
     responsive:{
         0:{ items:1 },
         600:{ items:3 },
         1000:{ items:4 }
     }
   });
+
+  // Carrossel de Depoimentos
+  $('.owl-dep8').owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    nav: false,
+    dots: true,
+    autoHeight: true
+  });
+
+  // Swiper Modelos (Inicializado diretamente no index.html para maior performance)
 });
