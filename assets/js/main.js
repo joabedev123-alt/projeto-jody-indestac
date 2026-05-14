@@ -28,11 +28,11 @@ $(document).ready(function(){
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: false,
-    lazyLoad: true,
+    lazyLoad: false,
     responsive:{
         0:{ items:1 },
         600:{ items:3 },
-        1000:{ items:4 }
+        1000:{ items:6 }
     }
   });
 

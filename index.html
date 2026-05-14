@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Indestac | Capas e Tampões Térmicos para SPA e Jacuzzi</title>
-  <meta name="description" content="Indestac Indústria: Especialista em Tampões Térmicos e Capas de Proteção para SPAs, Jacuzzis e Hidromassagens. Durabilidade, economia de energia e segurança.">
-  <meta property="og:title" content="Indestac | Capas e Tampões Térmicos para SPA e Jacuzzi">
+  <title>Hydro Cover | Capas e Tampões Térmicos para SPA e Jacuzzi</title>
+  <meta name="description" content="Hydro Cover Indústria: Especialista em Tampões Térmicos e Capas de Proteção para SPAs, Jacuzzis e Hidromassagens. Durabilidade, economia de energia e segurança.">
+  <meta property="og:title" content="Hydro Cover | Capas e Tampões Térmicos para SPA e Jacuzzi">
   <meta property="og:description" content="Proteja seu SPA com os melhores tampões térmicos do mercado. Economia e segurança para sua família.">
   <meta property="og:image" content="assets/fotos hero/hero01.jpeg">
   <meta property="og:type" content="website">
@@ -38,11 +38,20 @@
     }
 
     .bloco-banner31 {
-      height: 550px !important;
-      min-height: 550px !important;
+      height: 450px !important;
+      min-height: 450px !important;
     }
     .banner-31, .owl-stage-outer, .owl-stage, .owl-item {
-      height: 550px !important;
+      height: 450px !important;
+    }
+    .box-banner {
+      max-width: 1200px !important;
+      margin: 0 auto !important;
+      width: 100% !important;
+      height: 100% !important;
+      display: flex !important;
+      align-items: center !important;
+      padding: 0 20px !important;
     }
 
     /* Ajustes de Visibilidade do Carrossel de Trabalhos */
@@ -71,8 +80,8 @@
 
     @media (max-width: 768px) {
       .bloco-banner31, .banner-31, .owl-stage-outer, .owl-stage, .owl-item {
-        height: 400px !important;
-        min-height: 400px !important;
+        height: 320px !important;
+        min-height: 320px !important;
       }
       .box-banner .legenda h2 {
         font-size: 28px !important;
@@ -81,8 +90,8 @@
 
     /* Ajustes de Visibilidade da Logo - Tamanho Super Gigante */
     .logo, #headerBlock.topo-fixo .topo-34>.logo {
-      width: 420px !important;
-      height: 110px !important;
+      width: 600px !important;
+      height: 140px !important;
       background-size: contain !important;
       background-position: left center !important;
       display: block !important;
@@ -125,7 +134,8 @@
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
-      max-width: 100% !important;
+      max-width: 1200px !important;
+      margin: 0 auto !important;
       width: 100% !important;
       position: relative !important;
       height: 100% !important;
@@ -156,17 +166,26 @@
     }
 
     @media (max-width: 1023px) {
-      .logo, #headerBlock.topo-fixo .topo-34>.logo {
-        width: 300px !important;
-        height: 90px !important;
-        margin: 0 !important;
-        float: left !important;
+      #headerBlock { height: 90px !important; }
+      #headerBlock .topo-34 { justify-content: space-between !important; padding: 0 15px !important; }
+      .logo, #headerBlock.topo-fixo .topo-34>.logo { 
+        width: 180px !important; 
+        height: 50px !important; 
+        position: relative !important; 
+        left: auto !important; 
+        top: auto !important; 
+        transform: none !important; 
       }
-      #headerBlock {
-        height: 100px !important;
+      .botao-topo-orcamento { 
+        position: relative !important; 
+        right: auto !important; 
+        top: auto !important; 
+        transform: none !important; 
+        padding: 8px 15px !important; 
+        font-size: 11px !important; 
       }
-    #headerBlock .topo-34 .logo {
-      margin: 10px 15px !important;
+      .menu.nav { display: none !important; }
+      .menu-mobile-btn { display: block !important; order: 2; }
     }
 
     /* Limpeza de classes de fixação residuais */
@@ -179,7 +198,7 @@
     /* Estilos para Seções de Carrossel (Modelos e Depoimentos) */
     .clientes-parceiros-02, .depoimentos-google {
       background: #ffffff !important;
-      padding: 80px 20px !important;
+      padding: 40px 20px !important;
       overflow: hidden !important;
       position: relative !important;
       z-index: 5 !important;
@@ -191,9 +210,22 @@
     }
 
     .clientes-02-lista .div-conteudo img {
-      border-radius: 12px !important;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08) !important;
+      width: 100% !important;
+      height: auto !important;
+      display: block !important;
+      border-radius: 15px !important;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
       transition: transform 0.3s ease !important;
+    }
+    .clientes-02-lista .div-conteudo:hover img {
+      transform: scale(1.05);
+    }
+    .clientes-02-lista .div-conteudo h3 {
+      font-size: 14px !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      margin-top: 15px !important;
+      color: #03003D !important;
     }
 
     .clientes-02-lista .div-conteudo:hover img {
@@ -220,122 +252,82 @@
       flex-wrap: wrap;
     }
     .beneficios article {
-      background: #fff !important;
+      background: #ffffff !important;
       border-radius: 20px !important;
-      padding: 45px 35px !important;
-      box-shadow: 0 15px 45px rgba(0,0,0,0.07) !important;
+      padding: 40px 30px !important;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08) !important;
       height: auto !important;
       display: flex !important;
       flex-direction: column !important;
       align-items: flex-start !important;
       text-align: left !important;
       width: calc(33.333% - 20px) !important;
-      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+      transition: all 0.4s ease !important;
       overflow: visible !important;
-      border: 1px solid rgba(0,0,0,0.03) !important;
+      border: 1px solid rgba(0,0,0,0.05) !important;
     }
     .beneficios article:hover {
-      transform: translateY(-12px) !important;
-      box-shadow: 0 25px 60px rgba(0,0,0,0.12) !important;
+      transform: translateY(-10px) !important;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.15) !important;
     }
-    .beneficios article:before {
+    .beneficios article:before, 
+    .cta-tampoes a:before, 
+    .cta-tampoes-2 a:before,
+    .botao-topo-orcamento:before,
+    .tabs-01 a:before,
+    .beneficios article:after, 
+    .cta-tampoes a:after, 
+    .cta-tampoes-2 a:after,
+    .botao-topo-orcamento:after,
+    .tabs-01 a:after {
       display: none !important;
+      content: none !important;
     }
     .beneficios article .mask {
       position: relative !important;
-      background: #ffffff !important;
+      background: transparent !important;
       padding: 0 !important;
       left: 0 !important;
       width: 100% !important;
       height: auto !important;
       transition: none !important;
     }
-    .beneficios article, article[data-group="serv07"] {
-      background: #ffffff !important;
-      background-image: none !important;
+    .beneficios article .icone {
+      margin-bottom: 20px !important;
     }
-    .beneficios article h4 {
-      color: #03003D !important;
-    }
-    .beneficios article p {
-      color: #545454 !important;
+    .beneficios article .icone img {
+      width: 60px !important;
+      height: auto !important;
     }
     .beneficios article span {
       color: #00F0FF !important;
-    }
-    .beneficios article:hover .mask {
-        left: 0 !important;
-    }
-    .beneficios article .icone {
-      margin-bottom: 25px !important;
-      height: auto !important;
-      width: auto !important;
-    }
-    .beneficios article .icone img {
-      width: 85px !important;
-      height: auto !important;
+      font-weight: 800 !important;
+      text-transform: uppercase !important;
+      font-size: 12px !important;
+      letter-spacing: 1px !important;
+      display: block !important;
+      margin-bottom: 10px !important;
     }
     .beneficios article h4 {
-      font-size: 28px !important;
+      font-size: 22px !important;
       color: #03003D !important;
       font-weight: 700 !important;
-      margin-bottom: 18px !important;
-      line-height: 1.2 !important;
-      padding-bottom: 0 !important;
+      margin-bottom: 15px !important;
+      line-height: 1.3 !important;
       font-family: 'Archivo', sans-serif !important;
     }
-
-    /* Estilos para o Carrossel de Modelos */
-    .clientes-parceiros-02 .owl-nav {
-      position: absolute !important;
-      top: 50% !important;
-      width: 106% !important;
-      left: -3% !important;
-      display: flex !important;
-      justify-content: space-between !important;
-      transform: translateY(-50%) !important;
-      pointer-events: none !important;
-    }
-    .clientes-parceiros-02 .owl-nav button {
-      background: transparent !important;
-      border: none !important;
-      box-shadow: none !important;
-      pointer-events: auto !important;
-      font-size: 70px !important;
-      color: #03003D !important;
-      transition: all 0.3s ease !important;
-    }
-    .clientes-parceiros-02 .owl-nav button:hover {
-      color: #00F0FF !important;
-      background: transparent !important;
-    }
-    .clientes-02-lista {
-      margin: 0 auto !important;
-      display: block !important;
-      float: none !important;
-    }
-    .owl-nav {
-      display: none !important;
-    }
-    .beneficios article h4:before {
-      display: none !important;
-    }
-    .beneficios .beneficio-linha {
-      width: 70px;
-      height: 5px;
-      background-color: #00F0FF;
-      margin-bottom: 25px;
-      border-radius: 2px;
+    .beneficios article .beneficio-linha {
+      background: #00F0FF !important;
+      width: 40px !important;
+      height: 3px !important;
+      margin-bottom: 20px !important;
+      border-radius: 2px !important;
     }
     .beneficios article p {
-      font-size: 17px !important;
-      color: #555 !important;
+      color: #545454 !important;
+      font-size: 15px !important;
       line-height: 1.6 !important;
       margin: 0 !important;
-      width: 100% !important;
-    }
-    .beneficios article .cta-beneficios {
-      display: none !important;
     }
     @media (max-width: 1023px) {
       .beneficios article {
@@ -346,12 +338,26 @@
       .beneficios article {
         width: 100% !important;
         max-width: 450px;
-        margin: 0 auto;
+        margin: 0 auto !important;
       }
       .beneficios .full-max {
-        gap: 40px;
+        gap: 30px !important;
       }
     }
+
+    .clientes-parceiros-02:before,
+    .clientes-parceiros-02 h2:before {
+      display: none !important;
+      content: none !important;
+    }
+
+    /* Estilos para o Carrossel de Modelos (Igual à Foto) */
+    .clientes-02-lista .div-conteudo img {
+      width: 100% !important;
+      height: auto !important;
+      display: block !important;
+    }
+
     .whats-global::before,
     .btn-wpp::before,
     .bt-whats::before,
@@ -413,7 +419,7 @@
 
     /* Estilos para Cores e Medidas */
     .secao-cores, .secao-medidas {
-      padding: 60px 0;
+      padding: 30px 0 !important;
       text-align: center;
     }
     .secao-cores img, .secao-medidas img {
@@ -474,19 +480,44 @@
     }
     /* Otimização Mobile Final */
     @media (max-width: 1023px) {
-      #headerBlock { height: 80px !important; padding: 0 15px !important; }
-      .logo, #headerBlock.topo-fixo .topo-34>.logo { width: 180px !important; height: 60px !important; }
-      .menu.nav { display: none !important; }
-      .menu-mobile-btn { display: block !important; background: #03003D; color: #fff; border: none; padding: 10px; border-radius: 5px; cursor: pointer; z-index: 10001; }
-      .topo-right { gap: 15px !important; }
-      body.mobile-nav-active .menu.nav { display: flex !important; position: fixed !important; top: 0; right: 0; width: 280px; height: 100vh; background: #fff; z-index: 10000; flex-direction: column; padding: 60px 20px; box-shadow: -10px 0 30px rgba(0,0,0,0.1); }
-      body.mobile-nav-active .pmenu { flex-direction: column !important; gap: 20px !important; width: 100% !important; display: flex !important; }
-      body.mobile-nav-active .pmenu li a { font-size: 18px !important; color: #03003D !important; padding: 10px 0 !important; display: block !important; }
+      body.mobile-nav-active .menu.nav { 
+        display: flex !important; 
+        position: fixed !important; 
+        top: 0; 
+        right: 0; 
+        width: 100%; 
+        height: 100vh; 
+        background: #fff; 
+        z-index: 10000; 
+        flex-direction: column; 
+        padding: 80px 20px; 
+        box-shadow: none; 
+      }
+      body.mobile-nav-active .pmenu { 
+        flex-direction: column !important; 
+        gap: 25px !important; 
+        width: 100% !important; 
+        display: flex !important; 
+        align-items: center !important;
+      }
+      body.mobile-nav-active .pmenu li a { font-size: 20px !important; color: #03003D !important; text-align: center !important; }
     }
     @media (max-width: 768px) {
       .contato .container-contato { flex-direction: column !important; text-align: center; }
       .contato .img-contato { width: 100% !important; max-width: 300px; }
-      h2 { font-size: 28px !important; }
+      h2 { font-size: 26px !important; line-height: 1.2 !important; }
+      h3 { font-size: 20px !important; }
+      .bloco-premium-moldura { padding: 40px 0 !important; }
+      #footerBlock { padding: 40px 15px !important; text-align: center; }
+      #footerBlock .rodape-33 { gap: 30px !important; }
+      #footerBlock .col1-rod, #footerBlock .col2-rod, #footerBlock .col3-rod { 
+        min-width: 100% !important; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+      }
+      #footerBlock .redes { justify-content: center !important; }
+      .box-banner .legenda { padding-bottom: 40px !important; }
     }
   </style>
 
@@ -499,8 +530,8 @@
     <!-- End Google Tag Manager (noscript) -->
     <header id="headerBlock">
         <div class="topo-34">
-            <a class="logo" href="#" title="Indestac" style="width: 500px; background-size: contain !important; background-position: left center !important;">
-                <h1>Indestac</h1>
+            <a class="logo" href="#" title="Hydro Cover" style="width: 600px; background-size: contain !important; background-position: left center !important;">
+                <h1>Hydro Cover</h1>
             </a>
 
             <button class="menu-mobile-btn" style="display: none;" onclick="document.body.classList.toggle('mobile-nav-active')">
@@ -509,7 +540,7 @@
                 </svg>
             </button>
             <nav class="menu nav">
-                    <h2 style="display: none;">Navegação - Indestac</h2>
+                    <h2 style="display: none;">Navegação - Hydro Cover</h2>
                     <ul class="pmenu" style="display: flex; gap: 30px; align-items: center; list-style: none; margin: 0; padding: 0;">
                         <li class="drop_ul cat-id_1"><a href="#modelos-de-tampoes" style="white-space: nowrap; font-weight: 600; color: #03003D; text-decoration: none;">Tampão Térmico para SPA</a></li>
                         <li class="drop_ul cat-id_2"><a href="#beneficios" style="white-space: nowrap; font-weight: 600; color: #03003D; text-decoration: none;">Benefícios</a></li>
@@ -550,6 +581,10 @@
 
                                     <div class="legenda">
                                         <h2><b>Você Relaxa,</b> A Gente Cuida.</h2>
+                                        <a href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de um orçamento para Tampão Térmico" target="_blank" style="display: inline-flex !important; align-items: center !important; justify-content: center !important; background: #25d366 !important; color: #fff !important; padding: 12px 35px !important; border-radius: 50px !important; font-weight: 700 !important; text-decoration: none !important; text-transform: uppercase !important; font-size: 16px !important; width: 100% !important; max-width: 420px !important; gap: 10px !important;">
+                                            <svg viewBox="0 0 24 24" width="22" height="22" style="fill: #fff; display: block !important;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                            Solicitar Orçamento
+                                        </a>
 
 
 
@@ -567,6 +602,10 @@
 
                                     <div class="legenda">
                                         <h2><b>Você Relaxa,</b> A Gente Cuida.</h2>
+                                        <a href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de um orçamento para Tampão Térmico" target="_blank" style="display: inline-flex !important; align-items: center !important; justify-content: center !important; background: #25d366 !important; color: #fff !important; padding: 12px 35px !important; border-radius: 50px !important; font-weight: 700 !important; text-decoration: none !important; text-transform: uppercase !important; font-size: 16px !important; width: 100% !important; max-width: 420px !important; gap: 10px !important;">
+                                            <svg viewBox="0 0 24 24" width="22" height="22" style="fill: #fff; display: block !important;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                            Solicitar Orçamento
+                                        </a>
 
 
 
@@ -584,6 +623,10 @@
 
                                     <div class="legenda">
                                         <h2><b>Você Relaxa,</b> A Gente Cuida.</h2>
+                                        <a href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de um orçamento para Tampão Térmico" target="_blank" style="display: inline-flex !important; align-items: center !important; justify-content: center !important; background: #25d366 !important; color: #fff !important; padding: 12px 35px !important; border-radius: 50px !important; font-weight: 700 !important; text-decoration: none !important; text-transform: uppercase !important; font-size: 16px !important; width: 100% !important; max-width: 420px !important; gap: 10px !important;">
+                                            <svg viewBox="0 0 24 24" width="22" height="22" style="fill: #fff; display: block !important;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                            Solicitar Orçamento
+                                        </a>
 
 
 
@@ -602,6 +645,10 @@
 
                                     <div class="legenda">
                                         <h2><b>Você Relaxa,</b> A Gente Cuida.</h2>
+                                        <a href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de um orçamento para Tampão Térmico" target="_blank" style="display: inline-flex !important; align-items: center !important; justify-content: center !important; background: #25d366 !important; color: #fff !important; padding: 12px 35px !important; border-radius: 50px !important; font-weight: 700 !important; text-decoration: none !important; text-transform: uppercase !important; font-size: 16px !important; width: 100% !important; max-width: 420px !important; gap: 10px !important;">
+                                            <svg viewBox="0 0 24 24" width="22" height="22" style="fill: #fff; display: block !important;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                            Solicitar Orçamento
+                                        </a>
 
 
 
@@ -619,6 +666,10 @@
 
                                     <div class="legenda">
                                         <h2><b>Você Relaxa,</b> A Gente Cuida.</h2>
+                                        <a href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de um orçamento para Tampão Térmico" target="_blank" style="display: inline-flex !important; align-items: center !important; background: #25d366 !important; color: #fff !important; padding: 15px 35px !important; border-radius: 50px !important; font-weight: 700 !important; text-decoration: none !important; transition: all 0.3s ease !important; margin-top: 25px !important; text-transform: uppercase !important; font-size: 16px !important; box-shadow: 0 10px 20px rgba(0,0,0,0.2) !important;">
+                                            <svg viewBox="0 0 24 24" width="24" height="24" style="margin-right: 12px; fill: #fff; display: block !important;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                            Solicitar Orçamento
+                                        </a>
 
 
 
@@ -685,39 +736,39 @@
                     <h2 data-anime="fade-down" class="animate" style="color: #03003D !important;">Muitos <b style="color: #00F0FF !important;">Benefícios</b></h2>
 
                     <div class="full-max">
-                        <article data-anime="fade-down" data-group="serv07" class="animate" style="background: #fff !important; border: 1px solid rgba(0,0,0,0.05) !important; height: auto !important; padding: 25px !important; box-shadow: 0 10px 20px rgba(0,0,0,0.05) !important; border-radius: 12px !important;">
-                            <div class="mask" style="background: transparent !important; position: relative !important; left: 0 !important;">
-                                <div class="icone" style="margin-bottom: 15px !important;">
-                                    <img src="assets/img/icon-insetos.png" alt="Insetos" style="width: 50px !important;">
+                        <article data-anime="fade-down" data-group="serv07" class="animate">
+                            <div class="mask">
+                                <div class="icone">
+                                    <img src="assets/img/icon-insetos.png" alt="Insetos">
                                 </div>
-                                <span style="color: #00F0FF !important; font-weight: 800 !important; text-transform: uppercase !important; font-size: 12px !important; letter-spacing: 1px !important;">Segurança</span>
-                                <h4 style="color: #03003D !important; font-size: 20px !important; font-weight: 700 !important; margin: 8px 0 !important; line-height: 1.3 !important;">Evita a entrada de insetos e animais domésticos</h4>
-                                <div class="beneficio-linha" style="background: #00F0FF !important; width: 40px !important; height: 3px !important; margin: 15px 0 !important;"></div>
-                                <p style="color: #545454 !important; font-size: 15px !important; line-height: 1.5 !important;">Mais segurança para seu pet! Evite acidentes!</p>
+                                <span>Segurança</span>
+                                <h4>Evita a entrada de insetos e animais domésticos</h4>
+                                <div class="beneficio-linha"></div>
+                                <p>Mais segurança para seu pet! Evite acidentes!</p>
                             </div>
                         </article>
 
-                        <article data-anime="fade-down" data-group="serv07" class="animate" style="background: #fff !important; border: 1px solid rgba(0,0,0,0.05) !important; height: auto !important; padding: 25px !important; box-shadow: 0 10px 20px rgba(0,0,0,0.05) !important; border-radius: 12px !important;">
-                            <div class="mask" style="background: transparent !important; position: relative !important; left: 0 !important;">
-                                <div class="icone" style="margin-bottom: 15px !important;">
-                                    <img src="assets/img/icon-temperatura.png" alt="Temperatura" style="width: 50px !important;">
+                        <article data-anime="fade-down" data-group="serv07" class="animate">
+                            <div class="mask">
+                                <div class="icone">
+                                    <img src="assets/img/icon-temperatura.png" alt="Temperatura">
                                 </div>
-                                <span style="color: #00F0FF !important; font-weight: 800 !important; text-transform: uppercase !important; font-size: 12px !important; letter-spacing: 1px !important;">Temperatura & Economia</span>
-                                <h4 style="color: #03003D !important; font-size: 20px !important; font-weight: 700 !important; margin: 8px 0 !important; line-height: 1.3 !important;">Ajuda a manter a temperatura da água</h4>
-                                <div class="beneficio-linha" style="background: #00F0FF !important; width: 40px !important; height: 3px !important; margin: 15px 0 !important;"></div>
-                                <p style="color: #545454 !important; font-size: 15px !important; line-height: 1.5 !important;">Conserve a temperatura da água por mais tempo economizando energia.</p>
+                                <span>Temperatura & Economia</span>
+                                <h4>Ajuda a manter a temperatura da água</h4>
+                                <div class="beneficio-linha"></div>
+                                <p>Conserve a temperatura da água por mais tempo economizando energia.</p>
                             </div>
                         </article>
 
-                        <article data-anime="fade-down" data-group="serv07" class="animate" style="background: #fff !important; border: 1px solid rgba(0,0,0,0.05) !important; height: auto !important; padding: 25px !important; box-shadow: 0 10px 20px rgba(0,0,0,0.05) !important; border-radius: 12px !important;">
-                            <div class="mask" style="background: transparent !important; position: relative !important; left: 0 !important;">
-                                <div class="icone" style="margin-bottom: 15px !important;">
-                                    <img src="assets/img/icon-sujeira.png" alt="Sujeira" style="width: 50px !important;">
+                        <article data-anime="fade-down" data-group="serv07" class="animate">
+                            <div class="mask">
+                                <div class="icone">
+                                    <img src="assets/img/icon-sujeira.png" alt="Sujeira">
                                 </div>
-                                <span style="color: #00F0FF !important; font-weight: 800 !important; text-transform: uppercase !important; font-size: 12px !important; letter-spacing: 1px !important;">Sujeira & Higiene</span>
-                                <h4 style="color: #03003D !important; font-size: 20px !important; font-weight: 700 !important; margin: 8px 0 !important; line-height: 1.3 !important;">Evita o acúmulo de sujeira</h4>
-                                <div class="beneficio-linha" style="background: #00F0FF !important; width: 40px !important; height: 3px !important; margin: 15px 0 !important;"></div>
-                                <p style="color: #545454 !important; font-size: 15px !important; line-height: 1.5 !important;">Economize no uso de produtos químicos e manutenção.</p>
+                                <span>Sujeira & Higiene</span>
+                                <h4>Evita o acúmulo de sujeira</h4>
+                                <div class="beneficio-linha"></div>
+                                <p>Economize no uso de produtos químicos e manutenção.</p>
                             </div>
                         </article>
                     </div>
@@ -765,70 +816,70 @@
                     <div class="full-max clientes-02-lista owl-carousel owl-theme">
                         <div class="div-conteudo">
                             <figure>
-                                <img src="content/images/6b13e4d04cea077c557122619bb9777c.jpg" data-src="content/images/6b13e4d04cea077c557122619bb9777c.jpg" width="196" height="168" title="OITAVADA" alt="OITAVADA" class="owl-lazy">
-                            </figure>
-                            <h3>OITAVADA</h3>
-                        </div>
-                        <div class="div-conteudo">
-                            <figure>
-                                <img src="content/images/4155d2a22f07377dda90b3ebbbc58b26.jpg" data-src="content/images/4155d2a22f07377dda90b3ebbbc58b26.jpg" width="196" height="168" title="OVAL" alt="OVAL" class="owl-lazy">
-                            </figure>
-                            <h3>OVAL</h3>
-                        </div>
-                        <div class="div-conteudo">
-                            <figure>
-                                <img src="content/images/8508146675585db53c16ec1743571510.jpg" data-src="content/images/8508146675585db53c16ec1743571510.jpg" width="196" height="168" title="QUADRADA" alt="QUADRADA" class="owl-lazy">
-                            </figure>
-                            <h3>QUADRADA</h3>
-                        </div>
-                        <div class="div-conteudo">
-                            <figure>
-                                <img src="content/images/4ba8978b2c6582c35f51243079827fd5.jpg" data-src="content/images/4ba8978b2c6582c35f51243079827fd5.jpg" width="196" height="168" title="REDONDO" alt="REDONDO" class="owl-lazy">
-                            </figure>
-                            <h3>REDONDO</h3>
-                        </div>
-                        <div class="div-conteudo">
-                            <figure>
-                                <img src="content/images/6296fcaa59c64c7a7467ff783c04c55a.jpg" data-src="content/images/6296fcaa59c64c7a7467ff783c04c55a.jpg" width="196" height="168" title="RETANGULAR" alt="RETANGULAR" class="owl-lazy">
-                            </figure>
-                            <h3>RETANGULAR</h3>
-                        </div>
-                        <div class="div-conteudo">
-                            <figure>
-                                <img src="content/images/3f767e91f5634c945ddbcf818a4d6dfb.jpg" data-src="content/images/3f767e91f5634c945ddbcf818a4d6dfb.jpg" width="196" height="168" title="SEXTAVADA" alt="SEXTAVADA" class="owl-lazy">
-                            </figure>
-                            <h3>SEXTAVADA</h3>
-                        </div>
-                        <div class="div-conteudo">
-                            <figure>
-                                <img src="content/images/d5a09a3685bd0bfd200923e7b6d3f32c.jpg" data-src="content/images/d5a09a3685bd0bfd200923e7b6d3f32c.jpg" width="196" height="168" title="CHANFRADA" alt="CHANFRADA" class="owl-lazy">
-                            </figure>
-                            <h3>CHANFRADA</h3>
-                        </div>
-                        <div class="div-conteudo">
-                            <figure>
-                                <img src="content/images/3d386d169445f1de4e8978e09a4ebc55.jpg" data-src="content/images/3d386d169445f1de4e8978e09a4ebc55.jpg" width="196" height="168" title="CHANFRADA 2" alt="CHANFRADA 2" class="owl-lazy">
-                            </figure>
-                            <h3>CHANFRADA 2</h3>
-                        </div>
-                        <div class="div-conteudo">
-                            <figure>
-                                <img src="content/images/02fa0713872cb5962827be90c7fb07a4.jpg" data-src="content/images/02fa0713872cb5962827be90c7fb07a4.jpg" width="196" height="168" title="DIAMANTE" alt="DIAMANTE" class="owl-lazy">
+                                <img src="assets/Modelos/Diamante.jpg" width="196" height="168" title="DIAMANTE" alt="DIAMANTE">
                             </figure>
                             <h3>DIAMANTE</h3>
                         </div>
                         <div class="div-conteudo">
                             <figure>
-                                <img src="content/images/eabb57720dee41a4c7ade18223255a23.jpg" data-src="content/images/eabb57720dee41a4c7ade18223255a23.jpg" width="196" height="168" title="LEQUE" alt="LEQUE" class="owl-lazy">
+                                <img src="assets/Modelos/Leque.jpg" width="196" height="168" title="LEQUE" alt="LEQUE">
                             </figure>
                             <h3>LEQUE</h3>
+                        </div>
+                        <div class="div-conteudo">
+                            <figure>
+                                <img src="assets/Modelos/Oitava.jpg" width="196" height="168" title="OITAVADA" alt="OITAVADA">
+                            </figure>
+                            <h3>OITAVADA</h3>
+                        </div>
+                        <div class="div-conteudo">
+                            <figure>
+                                <img src="assets/Modelos/Oval.jpg" width="196" height="168" title="OVAL" alt="OVAL">
+                            </figure>
+                            <h3>OVAL</h3>
+                        </div>
+                        <div class="div-conteudo">
+                            <figure>
+                                <img src="assets/Modelos/Quadrada.jpg" width="196" height="168" title="QUADRADA" alt="QUADRADA">
+                            </figure>
+                            <h3>QUADRADA</h3>
+                        </div>
+                        <div class="div-conteudo">
+                            <figure>
+                                <img src="assets/Modelos/Redodno.jpg" width="196" height="168" title="REDONDO" alt="REDONDO">
+                            </figure>
+                            <h3>REDONDO</h3>
+                        </div>
+                        <div class="div-conteudo">
+                            <figure>
+                                <img src="assets/Modelos/Retangulo.jpg" width="196" height="168" title="RETANGULAR" alt="RETANGULAR">
+                            </figure>
+                            <h3>RETANGULAR</h3>
+                        </div>
+                        <div class="div-conteudo">
+                            <figure>
+                                <img src="assets/Modelos/Sextava.jpg" width="196" height="168" title="SEXTAVADA" alt="SEXTAVADA">
+                            </figure>
+                            <h3>SEXTAVADA</h3>
+                        </div>
+                        <div class="div-conteudo">
+                            <figure>
+                                <img src="assets/Modelos/hanfrada.jpg" width="196" height="168" title="CHANFRADA" alt="CHANFRADA">
+                            </figure>
+                            <h3>CHANFRADA</h3>
+                        </div>
+                        <div class="div-conteudo">
+                            <figure>
+                                <img src="assets/Modelos/Chanfrada2.jpg" width="196" height="168" title="CHANFRADA 2" alt="CHANFRADA 2">
+                            </figure>
+                            <h3>CHANFRADA 2</h3>
                         </div>
                     </div>
             </section>
 
             <section class="secao-trabalhos-realizados" style="position: relative; z-index: 10; background: #E0F1FE !important; padding: 100px 20px !important;">
                 <div class="full-max" style="text-align: center; margin-bottom: 60px; max-width: 1200px; margin: 0 auto;">
-                    <span style="color: #00F0FF; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; font-size: 14px; display: block; margin-bottom: 10px; font-family: 'Archivo', sans-serif !important;">Trabalhos Realizados</span>
+                    <span style="color: #000000 !important; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; font-size: 18px !important; display: block; margin-bottom: 10px; font-family: 'Archivo', sans-serif !important;">Trabalhos Realizados</span>
                     <h2 style="color: #03003D; font-size: 38px; font-weight: 400; line-height: 1.2; margin: 0; font-family: 'Archivo', sans-serif !important;">
                         Alguns Modelos de <b style="font-weight: 800;">Tampões Térmicos</b> <br> que <b style="font-weight: 800;">Fabricamos</b>
                     </h2>
@@ -869,20 +920,20 @@
                     </div>
                     
                     <!-- Setas de Navegação Personalizadas -->
-                    <div class="swiper-button-next" style="color: #03003D !important; background: white; width: 45px; height: 45px; border-radius: 50%; box-shadow: 0 5px 15px rgba(0,0,0,0.2);"></div>
-                    <div class="swiper-button-prev" style="color: #03003D !important; background: white; width: 45px; height: 45px; border-radius: 50%; box-shadow: 0 5px 15px rgba(0,0,0,0.2);"></div>
+                    <div class="swiper-button-next" style="color: #03003D !important; background: white; width: 45px; height: 45px; border-radius: 50%;"></div>
+                    <div class="swiper-button-prev" style="color: #03003D !important; background: white; width: 45px; height: 45px; border-radius: 50%;"></div>
                     
                     <div class="swiper-pagination" style="bottom: 0px !important;"></div>
                 </div>
             </section>
 
-            <section class="cta-tampoes" style="position: relative; padding: 120px 20px; background: url('assets/fotos/fotos hidro/hidro 01.jpeg') no-repeat center center; background-size: cover; display: flex; align-items: center; justify-content: center; overflow: hidden; margin: 40px 0;">
-                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(3, 0, 61, 0.85), rgba(3, 0, 61, 0.85)); z-index: 1;"></div>
-                <div style="position: relative; z-index: 2; text-align: center; max-width: 900px; width: 100%;">
-                    <h2 style="color: #fff !important; font-family: 'Archivo', sans-serif !important; font-size: clamp(28px, 5vw, 48px) !important; font-weight: 800 !important; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 2px; line-height: 1.1;">Tampões Térmicos para SPA</h2>
-                    <p style="color: #fff !important; font-family: 'Archivo', sans-serif !important; font-size: clamp(18px, 3vw, 24px) !important; margin-bottom: 45px; opacity: 0.9;">Clique abaixo e solicite seu orçamento</p>
-                    <a href="https://wa.me/5511940004900" target="_blank" style="display: inline-flex; align-items: center; background: #1AD13F; color: #fff; padding: 18px 40px; border-radius: 10px; font-weight: bold; text-decoration: none; font-size: clamp(16px, 2vw, 20px); gap: 15px; transition: all 0.3s ease; box-shadow: 0 15px 30px rgba(0,0,0,0.3); text-transform: uppercase;">
-                        <img src="assets/img/whatsapp-icon.png" alt="WhatsApp" style="width: 28px; height: auto;">
+            <section class="cta-tampoes" style="position: relative; padding: 40px 0 !important; background: url('assets/fotos/fotos hidro/hidro 01.jpeg') no-repeat center center; background-size: cover; display: flex; align-items: center; justify-content: center; overflow: hidden; margin: 0 !important; width: 100% !important;">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(3, 0, 61, 0.9), rgba(3, 0, 61, 0.9)); z-index: 1;"></div>
+                <div style="position: relative; z-index: 2; text-align: center; width: 100% !important; max-width: 100% !important; padding: 0 20px;">
+                    <h2 style="color: #fff !important; font-family: 'Archivo', sans-serif !important; font-size: clamp(24px, 4vw, 42px) !important; font-weight: 800 !important; text-transform: uppercase; margin-bottom: 5px !important; letter-spacing: 1px; line-height: 1.1;">Tampões Térmicos para SPA</h2>
+                    <p style="color: #fff !important; font-family: 'Archivo', sans-serif !important; font-size: clamp(14px, 2vw, 18px) !important; margin-bottom: 25px !important; opacity: 0.9; font-weight: 400;">Clique abaixo e solicite seu orçamento</p>
+                    <a href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de um orçamento para Tampão Térmico" target="_blank" style="display: inline-flex !important; align-items: center !important; justify-content: center !important; background: #25d366 !important; color: #fff !important; padding: 12px 35px !important; border-radius: 50px !important; font-weight: 700 !important; text-decoration: none !important; text-transform: uppercase !important; font-size: 16px !important; min-width: 280px !important; gap: 10px !important;">
+                        <svg viewBox="0 0 24 24" width="22" height="22" style="fill: #fff; display: block !important;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                         Solicitar Orçamento
                     </a>
                 </div>
@@ -892,7 +943,7 @@
 
 
 
-            <section class="sobre-40 motivos" style="padding: 100px 20px; background: #F4F9FF; position: relative; overflow: hidden;">
+            <section class="sobre-40 motivos" style="padding: 40px 20px; background: #F4F9FF; position: relative; overflow: hidden;">
                 <div class="full-max" style="display: flex; align-items: center; justify-content: space-between; gap: 60px; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
                     
                     <!-- Bloco de Texto -->
@@ -902,25 +953,25 @@
                         
                         <div style="margin-bottom: 35px; position: relative; padding-left: 20px; border-left: 4px solid #00F0FF;">
                             <h4 style="color: #03003D; font-size: 22px; font-weight: 700; margin-bottom: 12px; font-family: 'Archivo', sans-serif !important;">Qualidade e durabilidade:</h4>
-                            <p style="color: #555; font-size: 16px; line-height: 1.7; font-family: 'Archivo', sans-serif !important;">A Indestac é conhecida por produzir produtos de alta qualidade e durabilidade. O Tampão Térmico é fabricado com materiais de alta qualidade, garantindo resistência às intempéries e uma vida útil média de 5 anos. Os clientes podem confiar na Indestac para fornecer um produto confiável e duradouro.</p>
+                            <p style="color: #555; font-size: 16px; line-height: 1.7; font-family: 'Archivo', sans-serif !important;">A Hydro Cover é conhecida por produzir produtos de alta qualidade e durabilidade. O Tampão Térmico é fabricado com materiais de alta qualidade, garantindo resistência às intempéries e uma vida útil média de 5 anos. Os clientes podem confiar na Hydro Cover para fornecer um produto confiável e duradouro.</p>
                         </div>
 
                         <div style="margin-bottom: 35px; position: relative; padding-left: 20px; border-left: 4px solid #03003D;">
                             <h4 style="color: #03003D; font-size: 22px; font-weight: 700; margin-bottom: 12px; font-family: 'Archivo', sans-serif !important;">Proteção e praticidade:</h4>
-                            <p style="color: #555; font-size: 16px; line-height: 1.7; font-family: 'Archivo', sans-serif !important;">O Tampão Térmico da Indestac é projetado para proteger spas, banheiras ou ofurôs contra intempéries, mantendo a temperatura da água aquecida por mais tempo. Além disso, ele evita a entrada de sujeira, mosquitos e insetos. A facilidade de instalação e o design dobrável e com alças laterais tornam o Tampão Térmico prático e conveniente para uso diário.</p>
+                            <p style="color: #555; font-size: 16px; line-height: 1.7; font-family: 'Archivo', sans-serif !important;">O Tampão Térmico da Hydro Cover é projetado para proteger spas, banheiras ou ofurôs contra intempéries, mantendo a temperatura da água aquecida por mais tempo. Além disso, ele evita a entrada de sujeira, mosquitos e insetos. A facilidade de instalação e o design dobrável e com alças laterais tornam o Tampão Térmico prático e conveniente para uso diário.</p>
                         </div>
 
                         <div style="margin-bottom: 0; position: relative; padding-left: 20px; border-left: 4px solid #00F0FF;">
                             <h4 style="color: #03003D; font-size: 22px; font-weight: 700; margin-bottom: 12px; font-family: 'Archivo', sans-serif !important;">Reputação e confiança:</h4>
-                            <p style="color: #555; font-size: 16px; line-height: 1.7; font-family: 'Archivo', sans-serif !important;">A Indestac possui uma sólida reputação no mercado, com anos de experiência e clientes satisfeitos. A empresa é conhecida por sua excelência em atendimento ao cliente, oferecendo suporte e soluções adequadas. Os clientes podem confiar na Indestac para fornecer produtos confiáveis, duráveis e que atendam às suas necessidades de proteção e conservação da água em spas, banheiras ou ofurôs.</p>
+                            <p style="color: #555; font-size: 16px; line-height: 1.7; font-family: 'Archivo', sans-serif !important;">A Hydro Cover possui uma sólida reputação no mercado, com anos de experiência e clientes satisfeitos. A empresa é conhecida por sua excelência em atendimento ao cliente, oferecendo suporte e soluções adequadas. Os clientes podem confiar na Hydro Cover para fornecer produtos confiáveis, duráveis e que atendam às suas necessidades de proteção e conservação da água em spas, banheiras ou ofurôs.</p>
                         </div>
                     </div>
 
-                    <!-- Bloco de Imagens Sobrepostas -->
-                    <div class="blc-img" style="flex: 1; min-width: 350px; position: relative; height: 550px; display: flex; align-items: center; justify-content: center;">
-                        <div style="position: relative; width: 100%; height: 100%; max-width: 500px;">
-                            <img src="content/images/a601ad6245a2d741b9ef0039db2f138c.jpg" alt="SPA Deck" style="width: 80%; height: auto; border-radius: 20px; box-shadow: 0 30px 60px rgba(0,0,0,0.12); position: absolute; top: 0; left: 0; z-index: 1;">
-                            <img src="content/images/51174c0efa3e18699516d9aaf2968350.jpg" alt="SPA Beige" style="width: 80%; height: auto; border-radius: 20px; box-shadow: 0 40px 80px rgba(0,0,0,0.18); position: absolute; bottom: 20px; right: 0; z-index: 2; border: 8px solid #fff;">
+                    <!-- Bloco de Imagens Separadas -->
+                    <div class="blc-img" style="flex: 1; min-width: 350px; display: flex; flex-direction: column; gap: 30px; align-items: center; justify-content: center; padding: 20px;">
+                        <div style="width: 100%; max-width: 450px; display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+                            <img src="assets/capas presilhas/presilhas02.jpeg" alt="Presilhas de Segurança" style="width: 45%; height: auto; border-radius: 15px; box-shadow: 0 15px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                            <img src="assets/capas presilhas/presilhas 03.jpeg" alt="Capa com Presilhas" style="width: 45%; height: auto; border-radius: 15px; box-shadow: 0 15px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease; border: 4px solid #fff;">
                         </div>
                     </div>
 
@@ -928,129 +979,17 @@
             </section>
 
 
-
-
-            <section class="depoimentos-google" style="padding: 100px 20px; background: #fff; text-align: center; position: relative; z-index: 2;">
-                <!-- Splash + Title -->
-                <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 50px;">
-                    <img src="assets/img/splash-beneficios.png" alt="Splash" style="width: 60px; margin-bottom: 15px;">
-                    <h2 style="color: #03003D; font-size: 38px; font-weight: 800; font-family: 'Archivo', sans-serif !important;">Depoimentos dos <span style="color: #4285F4;">Clientes</span></h2>
-                    <p style="color: #555; font-size: 18px; font-family: 'Archivo', sans-serif !important;">O que nossos clientes dizem sobre a Indestac e seus produtos :</p>
-                </div>
-
-                <!-- Google Reviews Wrapper -->
-                <div style="max-width: 1200px; margin: 0 auto; background: #f8f9fa; border-radius: 15px; padding: 30px; box-shadow: 0 5px 25px rgba(0,0,0,0.05); font-family: 'Archivo', sans-serif !important;">
-                    
-                    <!-- Header Bar -->
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; border-bottom: 1px solid #e0e0e0; padding-bottom: 25px; flex-wrap: wrap; gap: 20px;">
-                        <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap; justify-content: center;">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style="width: 85px;">
-                            <span style="font-size: 22px; font-weight: 700; color: #555;">Avaliações</span>
-                            <div style="display: flex; align-items: center; gap: 8px; margin-left: 10px; background: #fff; padding: 5px 15px; border-radius: 30px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                                <span style="font-size: 24px; font-weight: 800; color: #333;">5</span>
-                                <span style="color: #FBBC05; font-size: 20px;">★★★★★</span>
-                                <span style="color: #888; font-size: 14px;">(167)</span>
-                            </div>
-                        </div>
-                        <a href="https://search.google.com/local/writereview?placeid=ChIJX9_9_9_9_9_9_9_9_9_9" target="_blank" style="border: 2px solid #4285F4; color: #4285F4; padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: 700; transition: all 0.3s ease;">Deixe seu Comentário</a>
-                    </div>
-
-                    <!-- Review Grid -->
-                    <div class="owl-dep8 owl-carousel owl-theme">
-                        <!-- Card 1: Priscila -->
-                        <div class="item-google-review" style="background: #fff; border-radius: 12px; padding: 25px; text-align: left; box-shadow: 0 4px 12px rgba(0,0,0,0.06); height: 320px; display: flex; flex-direction: column; justify-content: space-between; margin: 10px;">
-                            <div>
-                                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
-                                    <div style="width: 50px; height: 50px; background: #E91E63; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 22px;">P</div>
-                                    <div>
-                                        <div style="font-weight: 800; color: #333; font-size: 16px;">Priscila Pelegrino</div>
-                                        <div style="font-size: 12px; color: #999;">há 6 meses atrás</div>
-                                    </div>
-                                </div>
-                                <div style="color: #FBBC05; margin-bottom: 12px; font-size: 18px;">★★★★★</div>
-                                <p style="font-size: 14px; color: #555; line-height: 1.6; margin: 0;">Atendimento excelente, produto também parece ser (acabamos de receber), muito satisfeitos com a compra.</p>
-                            </div>
-                            <div style="margin-top: 20px; display: flex; align-items: center; gap: 8px; border-top: 1px solid #f0f0f0; padding-top: 15px;">
-                                 <img src="assets/img/logo1.png" alt="Hydro Cover" style="width: 40px; height: auto;">
-                                 <span style="font-size: 12px; color: #888; font-weight: 600;">Avaliação Hydro Cover</span>
-                            </div>
-                        </div>
-
-                        <!-- Card 2: Tania -->
-                        <div class="item-google-review" style="background: #fff; border-radius: 12px; padding: 25px; text-align: left; box-shadow: 0 4px 12px rgba(0,0,0,0.06); height: 320px; display: flex; flex-direction: column; justify-content: space-between; margin: 10px;">
-                            <div>
-                                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
-                                    <div style="width: 50px; height: 50px; background: #0097A7; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 22px;">T</div>
-                                    <div>
-                                        <div style="font-weight: 800; color: #333; font-size: 16px;">Tania Grando</div>
-                                        <div style="font-size: 12px; color: #999;">há 6 meses atrás</div>
-                                    </div>
-                                </div>
-                                <div style="color: #FBBC05; margin-bottom: 12px; font-size: 18px;">★★★★★</div>
-                                <p style="font-size: 14px; color: #555; line-height: 1.6; margin: 0;">Ótimo atendimento! Produto de qualidade e chegou perfeito ao pedido solicitado.</p>
-                            </div>
-                            <div style="margin-top: 20px; display: flex; align-items: center; gap: 8px; border-top: 1px solid #f0f0f0; padding-top: 15px;">
-                                 <img src="assets/img/logo1.png" alt="Hydro Cover" style="width: 40px; height: auto;">
-                                 <span style="font-size: 12px; color: #888; font-weight: 600;">Avaliação Hydro Cover</span>
-                            </div>
-                        </div>
-
-                        <!-- Card 3: Maura -->
-                        <div class="item-google-review" style="background: #fff; border-radius: 12px; padding: 25px; text-align: left; box-shadow: 0 4px 12px rgba(0,0,0,0.06); height: 320px; display: flex; flex-direction: column; justify-content: space-between; margin: 10px;">
-                            <div>
-                                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
-                                    <div style="width: 50px; height: 50px; background: #8E24AA; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 22px;">M</div>
-                                    <div>
-                                        <div style="font-weight: 800; color: #333; font-size: 16px;">Maura Guerreiro</div>
-                                        <div style="font-size: 12px; color: #999;">há 6 meses atrás</div>
-                                    </div>
-                                </div>
-                                <div style="color: #FBBC05; margin-bottom: 12px; font-size: 18px;">★★★★★</div>
-                                <p style="font-size: 14px; color: #555; line-height: 1.6; margin: 0;">Excelente! Tudo muito organizado, vendedora atenciosa e o pós venda também gostei muito. Vocês estão de parabéns!!!!</p>
-                            </div>
-                            <div style="margin-top: 20px; display: flex; align-items: center; gap: 8px; border-top: 1px solid #f0f0f0; padding-top: 15px;">
-                                 <img src="assets/img/logo1.png" alt="Hydro Cover" style="width: 40px; height: auto;">
-                                 <span style="font-size: 12px; color: #888; font-weight: 600;">Avaliação Hydro Cover</span>
-                            </div>
-                        </div>
-
-                        <!-- Card 4: Fran -->
-                        <div class="item-google-review" style="background: #fff; border-radius: 12px; padding: 25px; text-align: left; box-shadow: 0 4px 12px rgba(0,0,0,0.06); height: 320px; display: flex; flex-direction: column; justify-content: space-between; margin: 10px;">
-                            <div>
-                                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
-                                    <div style="width: 50px; height: 50px; background: #00897B; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 22px;">F</div>
-                                    <div>
-                                        <div style="font-weight: 800; color: #333; font-size: 16px;">Fran</div>
-                                        <div style="font-size: 12px; color: #999;">há 7 meses atrás</div>
-                                    </div>
-                                </div>
-                                <div style="color: #FBBC05; margin-bottom: 12px; font-size: 18px;">★★★★★</div>
-                                <p style="font-size: 14px; color: #555; line-height: 1.6; margin: 0;">Capa de ótima qualidade, empresa me enviou muito rápido. Atendimento via WhatsApp com a Amanda é perfeito, tirou todas as dúvidas e comprometimento. Super indico essa empresa.</p>
-                            </div>
-                            <div style="margin-top: 20px; display: flex; align-items: center; gap: 8px; border-top: 1px solid #f0f0f0; padding-top: 15px;">
-                                 <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="G" style="width: 18px;">
-                                 <span style="font-size: 12px; color: #888; font-weight: 600;">Publicado em Google</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="cta-tampoes-2" style="position: relative; padding: 120px 20px; background: url('assets/fotos/fotos hidro/hidro 01.jpeg') no-repeat center center; background-size: cover; display: flex; align-items: center; justify-content: center; overflow: hidden; margin: 0;">
-                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(3, 0, 61, 0.85), rgba(3, 0, 61, 0.85)); z-index: 1;"></div>
-                <div style="position: relative; z-index: 2; text-align: center; max-width: 900px; width: 100%;">
-                    <h2 style="color: #fff !important; font-family: 'Archivo', sans-serif !important; font-size: clamp(28px, 5vw, 48px) !important; font-weight: 800 !important; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 2px; line-height: 1.1;">Tampões Térmicos para SPA</h2>
-                    <p style="color: #fff !important; font-family: 'Archivo', sans-serif !important; font-size: clamp(18px, 3vw, 24px) !important; margin-bottom: 45px; opacity: 0.9;">Clique abaixo e solicite seu orçamento</p>
-                    <a href="https://wa.me/5511940004900" target="_blank" style="display: inline-flex; align-items: center; background: #1AD13F; color: #fff; padding: 18px 40px; border-radius: 10px; font-weight: bold; text-decoration: none; font-size: clamp(16px, 2vw, 20px); gap: 15px; transition: all 0.3s ease; box-shadow: 0 15px 30px rgba(0,0,0,0.3); text-transform: uppercase;">
-                        <img src="assets/img/whatsapp-icon.png" alt="WhatsApp" style="width: 28px; height: auto;">
+            <section class="cta-tampoes-2" style="position: relative; padding: 40px 0 !important; background: url('assets/fotos/fotos hidro/hidro 01.jpeg') no-repeat center center; background-size: cover; display: flex; align-items: center; justify-content: center; overflow: hidden; margin: 0 !important; width: 100% !important;">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(3, 0, 61, 0.9), rgba(3, 0, 61, 0.9)); z-index: 1;"></div>
+                <div style="position: relative; z-index: 2; text-align: center; width: 100% !important; max-width: 100% !important; padding: 0 20px;">
+                    <h2 style="color: #fff !important; font-family: 'Archivo', sans-serif !important; font-size: clamp(24px, 4vw, 42px) !important; font-weight: 800 !important; text-transform: uppercase; margin-bottom: 5px !important; letter-spacing: 1px; line-height: 1.1;">Tampões Térmicos para SPA</h2>
+                    <p style="color: #fff !important; font-family: 'Archivo', sans-serif !important; font-size: clamp(14px, 2vw, 18px) !important; margin-bottom: 25px !important; opacity: 0.9; font-weight: 400;">Clique abaixo e solicite seu orçamento</p>
+                    <a href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de um orçamento para Tampão Térmico" target="_blank" style="display: inline-flex !important; align-items: center !important; justify-content: center !important; background: #25d366 !important; color: #fff !important; padding: 12px 35px !important; border-radius: 50px !important; font-weight: 700 !important; text-decoration: none !important; text-transform: uppercase !important; font-size: 16px !important; min-width: 280px !important; gap: 10px !important;">
+                        <svg viewBox="0 0 24 24" width="22" height="22" style="fill: #fff; display: block !important;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                         Solicitar Orçamento
                     </a>
                 </div>
             </section>
-
-
-
-
             <div class="app-review-webcis-appwgr"></div>
 
 
@@ -1058,15 +997,7 @@
 
 
 
-            <section class="secao-cores" id="cores">
-                <div class="full-max">
-                    <h2 data-anime="fade-down">Tabela de <b>Cores</b></h2>
-                    <p data-anime="fade-up">Escolha a cor que melhor combina com seu ambiente:</p>
-                    <figure data-anime="fade-up" style="margin-top: 30px;">
-                        <img src="assets/tabela de cores.jpeg" alt="Tabela de Cores Indestac">
-                    </figure>
-                </div>
-            </section>
+
 
             <section class="secao-medidas" id="medidas">
                 <div class="full-max">
@@ -1081,7 +1012,7 @@
                 </div>
             </section>
 
-            <section class="faq-premium" style="padding: 100px 20px; background: #fff; position: relative; z-index: 2;">
+            <section class="faq-premium" style="padding: 40px 20px; background: #fff; position: relative; z-index: 2;">
                 <div class="full-max" style="display: flex; align-items: center; justify-content: space-between; gap: 60px; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
                     
                     <!-- Lado da Imagem -->
@@ -1089,7 +1020,7 @@
                         <span style="color: #00F0FF; font-weight: 800; text-transform: uppercase; font-size: 14px; letter-spacing: 2px; display: block; margin-bottom: 15px; font-family: 'Archivo', sans-serif !important;">Tire suas dúvidas</span>
                         <h2 style="color: #03003D; font-size: 42px; font-weight: 800; margin-bottom: 40px; line-height: 1.1; font-family: 'Archivo', sans-serif !important;">Dúvidas <br><span style="color: #00F0FF;">Frequentes</span></h2>
                         <figure style="margin: 0; position: relative;">
-                            <img src="content/images/0a0647aed1bc23c03a2ff74ad523e398.png" alt="FAQ Indestac" style="width: 100%; max-width: 450px; height: auto; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1));">
+                            <img src="assets/duvidas frequentes.png" alt="FAQ Hydro Cover" style="width: 100%; max-width: 450px; height: auto; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1));">
                         </figure>
                     </div>
 
@@ -1099,57 +1030,53 @@
                             <!-- Item 1 -->
                             <div style="margin-bottom: 15px; border: 1px solid #eee; border-radius: 12px; overflow: hidden; transition: all 0.3s ease;">
                                 <div class="bt-tabs" style="padding: 25px; background: #fdfdfd; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
-                                    <h3 style="font-size: 18px; font-weight: 700; color: #03003D; margin: 0; line-height: 1.4;">Como o Tampão Térmico da Indestac ajuda a manter a temperatura da água aquecida por mais tempo?</h3>
+                                    <h3 style="font-size: 18px; font-weight: 700; color: #03003D; margin: 0; line-height: 1.4;">Como o Tampão Térmico da Hydro Cover ajuda a manter a temperatura da água aquecida por mais tempo?</h3>
                                     <div style="color: #00F0FF; font-size: 24px; font-weight: bold;">+</div>
                                 </div>
                                 <div class="cnt-tabs" style="padding: 0 25px; max-height: 0; overflow: hidden; transition: all 0.4s ease; background: #fff;">
-                                    <p style="padding-bottom: 25px; color: #666; line-height: 1.6; margin: 0;">O Tampão Térmico da Indestac possui isolamento térmico de EPS Expandido, que ajuda a reter o calor e manter a temperatura da água por mais tempo, reduzindo o consumo de energia.</p>
+                                    <p style="padding-bottom: 25px; color: #666; line-height: 1.6; margin: 0;">O Tampão Térmico da Hydro Cover possui isolamento térmico de EPS Expandido, que ajuda a reter o calor e manter a temperatura da água por mais tempo, reduzindo o consumo de energia.</p>
                                 </div>
                             </div>
 
                             <!-- Item 2 -->
                             <div style="margin-bottom: 15px; border: 1px solid #eee; border-radius: 12px; overflow: hidden; transition: all 0.3s ease;">
                                 <div class="bt-tabs" style="padding: 25px; background: #fdfdfd; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
-                                    <h3 style="font-size: 18px; font-weight: 700; color: #03003D; margin: 0; line-height: 1.4;">O Tampão Térmico da Indestac é fácil de instalar?</h3>
+                                    <h3 style="font-size: 18px; font-weight: 700; color: #03003D; margin: 0; line-height: 1.4;">O Tampão Térmico da Hydro Cover é fácil de instalar?</h3>
                                     <div style="color: #00F0FF; font-size: 24px; font-weight: bold;">+</div>
                                 </div>
                                 <div class="cnt-tabs" style="padding: 0 25px; max-height: 0; overflow: hidden; transition: all 0.4s ease; background: #fff;">
-                                    <p style="padding-bottom: 25px; color: #666; line-height: 1.6; margin: 0;">Sim, o Tampão Térmico da Indestac é fácil de instalar. Sua estrutura dobrável e alças laterais facilitam o manuseio e a colocação sobre a spa, banheira ou ofurô.</p>
+                                    <p style="padding-bottom: 25px; color: #666; line-height: 1.6; margin: 0;">Sim, o Tampão Térmico da Hydro Cover é fácil de instalar. Sua estrutura dobrável e alças laterais facilitam o manuseio e a colocação sobre a spa, banheira ou ofurô.</p>
                                 </div>
                             </div>
 
                             <!-- Item 3 -->
                             <div style="margin-bottom: 15px; border: 1px solid #eee; border-radius: 12px; overflow: hidden; transition: all 0.3s ease;">
                                 <div class="bt-tabs" style="padding: 25px; background: #fdfdfd; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
-                                    <h3 style="font-size: 18px; font-weight: 700; color: #03003D; margin: 0; line-height: 1.4;">O Tampão Térmico da Indestac oferece proteção contra sujeira e insetos?</h3>
+                                    <h3 style="font-size: 18px; font-weight: 700; color: #03003D; margin: 0; line-height: 1.4;">O Tampão Térmico da Hydro Cover oferece proteção contra sujeira e insetos?</h3>
                                     <div style="color: #00F0FF; font-size: 24px; font-weight: bold;">+</div>
                                 </div>
                                 <div class="cnt-tabs" style="padding: 0 25px; max-height: 0; overflow: hidden; transition: all 0.4s ease; background: #fff;">
-                                    <p style="padding-bottom: 25px; color: #666; line-height: 1.6; margin: 0;">Sim, o Tampão Térmico da Indestac evita a entrada de sujeira, mosquitos e insetos, mantendo a água limpa e reduzindo a necessidade de produtos de limpeza.</p>
+                                    <p style="padding-bottom: 25px; color: #666; line-height: 1.6; margin: 0;">Sim, o Tampão Térmico da Hydro Cover evita a entrada de sujeira, mosquitos e insetos, mantendo a água limpa e reduzindo a necessidade de produtos de limpeza.</p>
                                 </div>
                             </div>
 
                             <!-- Item 4 -->
                             <div style="margin-bottom: 25px; border: 1px solid #eee; border-radius: 12px; overflow: hidden; transition: all 0.3s ease;">
                                 <div class="bt-tabs" style="padding: 25px; background: #fdfdfd; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
-                                    <h3 style="font-size: 18px; font-weight: 700; color: #03003D; margin: 0; line-height: 1.4;">Qual a vida útil média do Tampão Térmico da Indestac?</h3>
+                                    <h3 style="font-size: 18px; font-weight: 700; color: #03003D; margin: 0; line-height: 1.4;">Qual a vida útil média do Tampão Térmico da Hydro Cover?</h3>
                                     <div style="color: #00F0FF; font-size: 24px; font-weight: bold;">+</div>
                                 </div>
                                 <div class="cnt-tabs" style="padding: 0 25px; max-height: 0; overflow: hidden; transition: all 0.4s ease; background: #fff;">
-                                    <p style="padding-bottom: 25px; color: #666; line-height: 1.6; margin: 0;">O Tampão Térmico da Indestac possui uma vida útil média de 5 anos. Confeccionado com materiais duráveis e de alta qualidade, ele é projetado para utilizar em áreas internas e externas.</p>
+                                    <p style="padding-bottom: 25px; color: #666; line-height: 1.6; margin: 0;">O Tampão Térmico da Hydro Cover possui uma vida útil média de 5 anos. Confeccionado com materiais duráveis e de alta qualidade, ele é projetado para utilizar em áreas internas e externas.</p>
                                 </div>
                             </div>
-
-                            <div style="margin-top: 40px; text-align: left; background: #F4F9FF; padding: 30px; border-radius: 15px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
-                                <div>
-                                    <h4 style="color: #03003D; font-size: 20px; font-weight: 700; margin: 0; font-family: 'Archivo', sans-serif !important;">Ainda há Dúvidas?</h4>
-                                    <p style="color: #666; margin: 5px 0 0; font-size: 14px;">Nossa equipe está pronta para te ajudar agora mesmo.</p>
-                                </div>
-                                <a href="https://wa.me/5511983225770" target="_blank" style="background: #1AD13F; color: #fff; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 16px; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 10px 20px rgba(26, 209, 63, 0.2);">
-                                    <img src="assets/img/whatsapp-icon.png" alt="WhatsApp" style="width: 20px;">
-                                    Falar com Especialista
+                            <div style="margin-top: 40px; text-align: center;">
+                                <a href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de um orçamento para Tampão Térmico" target="_blank" style="display: inline-flex !important; align-items: center !important; justify-content: center !important; background: #25d366 !important; color: #fff !important; padding: 12px 35px !important; border-radius: 50px !important; font-weight: 700 !important; text-decoration: none !important; text-transform: uppercase !important; font-size: 16px !important; min-width: 280px !important; gap: 10px !important;">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" style="fill: #fff; display: block !important;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                    Solicitar Orçamento
                                 </a>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -1183,7 +1110,7 @@
                     
                     <!-- Lado Esquerdo: Imagem do Homem -->
                     <div style="flex: 1; min-width: 300px; display: flex; justify-content: flex-end;">
-                        <img src="atendente_contato_notebook_1778711492246.png" alt="Atendimento" style="max-width: 100%; height: auto; display: block;">
+                        <img src="assets/imagendados.png" alt="Atendimento" style="max-width: 100%; height: auto; display: block;">
                     </div>
 
                     <!-- Lado Direito: Formulário -->
@@ -1221,123 +1148,88 @@
             <!--IMAGES_ENTRY_END//-->
         </div>
     </div>
-    <footer id="footerBlock" style="padding-top: 60px !important;">
-        <!-- Logo no Rodapé -->
-        <div style="width: 100%; text-align: center; margin-bottom: 50px;">
-            <img src="assets/img/logo1.png" alt="Hydro Cover Logo" style="width: 350px; height: auto; filter: brightness(0) invert(1);">
+    <footer id="footerBlock" style="padding: 60px 20px 40px !important; background: #000000 !important; color: #fff !important; font-family: 'Archivo', sans-serif !important;">
+        <!-- Logo no Rodapé - Marcação Vermelha -->
+        <div style="width: 100%; max-width: 1200px; margin: 0 auto 30px; text-align: left; padding: 0 20px;">
+            <img src="assets/img/logo1.png" alt="Hydro Cover Logo" style="width: 160px; height: auto; filter: brightness(0) invert(1);">
         </div>
-
-        <div class="rodape-33">
-            <div class="col1-rod">
-                <b data-anime="fade-up">Informações de Contato</b>
-
-                <ul>
-
-                    <li data-anime="fade-down">
-                        <span>Telefones</span>
-                        <a href="tel:01143115340" title="Ligue para nós">11 4311-5340</a>
-                    </li>
-
-
-
-                    <li data-anime="fade-down">
-                        <span>Whatsapp</span>
-                        <a class="whats-global"
-                            href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de mais informações"
-                            target="_blank" rel="noreferrer" title="Contato via Whatsapp">
-                            
-                            11 98322-5770</a>
-                    </li>
-
-
-
-                    <li class="email-rod" data-anime="fade-down">
-                        <span>E-mail</span>
-                        <a href="mailto:contato@indestac.com.br" rel="noreferrer" target="_blank"
-                            title="Enviar e-mail">contato@indestac.com.br</a>
-                    </li>
-
-
-
-                    <li class="cnpj-rod" data-anime="fade-down">
-                        <span>CNPJ Indestac</span>
-                        24.447.174/0001-65
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="col2-rod">
-                <b data-anime="fade-up">Se Conecte</b>
-
-                <span data-anime="fade-down">Siga a Indestac nas Redes Sociais e fique por dentro das últimas
-                    novidades.</span>
-
-
-                <div class="redes" data-anime="fade-down">
-                    <a href="https://web.facebook.com/indestacindustria/?_rdc=1&amp;_rdr" target="_blank"
-                        title="Siga-nos: https://web.facebook.com/indestacindustria/?_rdc=1&amp;_rdr"
-                        rel="noreferrer"><i class="icon-facebook"></i></a><a
-                        href="https://www.instagram.com/indestac_/?hl=pt-br" target="_blank"
-                        title="Siga-nos: https://www.instagram.com/indestac_/?hl=pt-br" rel="noreferrer"><i
-                            class="icon-instagram"></i></a>
+        <div class="rodape-33" style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px;">
+            
+            <!-- Coluna 1: Informações de Contato -->
+            <div class="col1-rod" style="flex: 1; min-width: 280px;">
+                <div style="width: 40px; height: 3px; background: #00F0FF; margin-bottom: 20px;"></div>
+                <h3 style="color: #fff; font-size: 24px; font-weight: 800; margin-bottom: 30px;">Informações de Contato</h3>
+                
+                <div style="margin-bottom: 20px;">
+                    <span style="display: block; color: #888; font-size: 14px; margin-bottom: 5px;">Whatsapp</span>
+                    <strong style="display: block; color: #fff; font-size: 18px;">11 98322-5770</strong>
                 </div>
-
-
-                <a href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de mais informações"
-                    title="Solicitar orçamento" class="whats-global bt-whats" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.06 3.973L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
-                    Solicitar Orçamento</a>
-
-                <div class="indestac">
-                    <a href="https://loja.indestac.com.br/" class="loja-indestac" target="_blank"
-                        title="Loja Indestac">Loja Indestac</a>
-                    <a href="https://indestac.com.br/" class="site-indestac" target="_blank" title="Site Indestac">Site
-                        Indestac</a>
+                
+                <div style="margin-bottom: 20px;">
+                    <span style="display: block; color: #888; font-size: 14px; margin-bottom: 5px;">E-mails</span>
+                    <strong style="display: block; color: #fff; font-size: 14px;">Comercial@hydrocovercare.com</strong>
+                    <strong style="display: block; color: #fff; font-size: 14px; margin-top: 5px;">Hydrocovercare@gmail.com</strong>
                 </div>
-
-                <div class="copyright">
-                    <span>
-                        © 2024 - Indestac <a href="https://www.webcis.com.br/" target="_blank"
-                            title="WebCis - Criação de sites, otimização de sites, links patrocinados">Criação de site
-                            por: </a>
-                    </span>
+                
+                <div style="margin-bottom: 20px;">
+                    <span style="display: block; color: #888; font-size: 14px; margin-bottom: 5px;">CNPJ</span>
+                    <strong style="display: block; color: #fff; font-size: 16px;">66.171.924/0001-69</strong>
                 </div>
             </div>
 
-            <div class="col3-rod mapa-rodape">
-                <b class="breve teste" data-anime="fade-up">Em breve</b>
+            <!-- Coluna 2: Se Conecte -->
+            <div class="col2-rod" style="flex: 1; min-width: 280px;">
+                <div style="width: 40px; height: 3px; background: #00F0FF; margin-bottom: 20px;"></div>
+                <h3 style="color: #fff; font-size: 24px; font-weight: 800; margin-bottom: 30px;">Se Conecte</h3>
+                <p style="color: #888; font-size: 15px; line-height: 1.6; margin-bottom: 25px;">Siga a Hydro Cover nas Redes Sociais e fique por dentro das últimas novidades.</p>
+                
+                <div class="redes" style="display: flex; gap: 15px; margin-bottom: 30px;">
+                    <a href="https://web.facebook.com/indestacindustria/" target="_blank" style="width: 45px; height: 45px; background: #111; display: flex; align-items: center; justify-content: center; border-radius: 8px; color: #fff; text-decoration: none; font-size: 20px;"><i class="icon-facebook"></i></a>
+                    <a href="https://www.instagram.com/_hydrocover?igsh=MW1oaXd3MDBqYnRhYQ%3D%3D&utm_source=qr" target="_blank" style="width: 45px; height: 45px; background: #111; display: flex; align-items: center; justify-content: center; border-radius: 8px; color: #fff; text-decoration: none;">
+                        <svg viewBox="0 0 24 24" width="24" height="24" style="fill: #fff;"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.266.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.848 0-3.204.012-3.584.07-4.849.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.058-1.69-.072-4.949-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                </div>
+                
+                <a href="https://wa.me/5511970719270" target="_blank" style="display: flex; align-items: center; justify-content: center; background: #25d366; color: #fff; padding: 15px; border-radius: 8px; font-weight: 700; text-decoration: none; text-transform: uppercase; margin-bottom: 20px; gap: 10px; width: 100%;">
+                    <svg viewBox="0 0 24 24" width="24" height="24" style="fill: #fff;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Solicitar Orçamento
+                </a>
+                
+            </div>
 
-
-                <b data-anime="fade-up">Nossa Localização</b>
-
-                <div class="endereco-rod" data-anime="fade-down">
+            <!-- Coluna 3: Nossa Localização -->
+            <div class="col3-rod" style="flex: 1.2; min-width: 320px;">
+                <div style="width: 40px; height: 3px; background: #00F0FF; margin-bottom: 20px;"></div>
+                <h3 style="color: #fff; font-size: 24px; font-weight: 800; margin-bottom: 30px;">Nossa Localização</h3>
+                <p style="color: #fff; font-size: 15px; line-height: 1.4; margin-bottom: 20px;">
                     Rua Geraldo Soares Xavier, 247 <br>
-                    Parque Jandaia - Carapicuíba - SP
-                    - 06330-130
+                    Parque Jandaia - Carapicuíba - SP - 06330-130
+                </p>
+                
+                <div style="width: 100%; border-radius: 12px; overflow: hidden; height: 250px; background: #222; margin-bottom: 15px; position: relative;">
+                    <!-- Placeholder do Mapa similar à foto -->
+                    <img src="assets/img/mapa-placeholder.png" alt="Mapa" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
+                    <div style="position: absolute; bottom: 10px; left: 10px; right: 10px; background: #fff; padding: 10px; border-radius: 8px; display: flex; align-items: center; gap: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                        <input type="text" placeholder="Traçar rota, digite seu endereço" style="flex: 1; border: none; font-size: 12px; outline: none; color: #333;">
+                        <div style="width: 30px; height: 30px; background: #00F0FF; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #000;">
+                            <svg viewBox="0 0 24 24" width="16" height="16" style="fill: currentColor;"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="pelicula" data-anime="fade-down">
-                    <div id="map_canvas1" loading="lazy" title="Maps - Indestac"
-                        src="cid:frame-ACB3F005A1065EA488671D6F2F485444@mhtml.blink" data-original-tag="iframe"></div>
-                </div>
-
-                <div class="tracar-rota">
-                    <form method="get" id="form_route_footer">
-                        <label for="route_from_footer"></label>
-                        <input type="text" id="route_from_footer" name="route_from_footer"
-                            placeholder="Traçar rota, digite seu endereço">
-                        <input type="submit" value="Enviar">
-                    </form>
-                </div>
-
             </div>
 
         </div>
 
-
-
-
+        <div style="width: 100%; text-align: center; margin-top: 50px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.05);">
+            <!-- Slogan - Marcação Amarela -->
+            <div style="margin-bottom: 15px;">
+                <h4 style="color: #00F0FF; font-family: 'Archivo', sans-serif !important; font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Você Relaxa, A Gente Cuida.</h4>
+            </div>
+            <!-- Créditos - Marcação Laranja -->
+            <p style="color: #666; font-size: 13px; margin: 0; font-family: 'Archivo', sans-serif !important;">
+                Produzida com 💙 por <a href="https://camaly.com.br/" target="_blank" style="color: #fff; text-decoration: none; font-weight: 700;">CAMALY</a>
+            </p>
+        </div>
     </footer>
 
     <!--[if lt IE 9]><script src="template/lib/jquery/jquery-1.11.1.min.js"></script><![endif]-->
@@ -1426,41 +1318,6 @@
             }
           });
         }
-
-        // Inicialização dos Modelos (Owl Carousel)
-        if ($('.clientes-02-lista').length) {
-          $('.clientes-02-lista').owlCarousel({
-            loop: true,
-            margin: 20,
-            nav: false,
-            dots: true,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            lazyLoad: true,
-            responsive: {
-              0: { items: 1 },
-              600: { items: 3 },
-              1000: { items: 5 }
-            }
-          });
-        }
-
-        // Inicialização dos Depoimentos (Owl Carousel)
-        if ($('.owl-dep8').length) {
-          $('.owl-dep8').owlCarousel({
-            loop: true,
-            margin: 20,
-            nav: false,
-            dots: true,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            responsive: {
-              0: { items: 1 },
-              768: { items: 2 },
-              1024: { items: 3 }
-            }
-          });
-        }
       });
     </script>
     <script type="module" src="assets/js/main.js"></script>
@@ -1468,4 +1325,5 @@
 
 
 </html>
+
 
