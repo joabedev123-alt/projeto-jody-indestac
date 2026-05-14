@@ -486,6 +486,7 @@
       .rodape-33 div h3 { font-size: 20px !important; }
       .rodape-33 div p, .rodape-33 div strong { font-size: 14px !important; }
       .rodape-33 div div { margin-left: auto !important; margin-right: auto !important; }
+      .beneficios .full-max { flex-direction: column !important; align-items: center !important; gap: 30px !important; }
       .redes { justify-content: center !important; }
     }
   </style>
@@ -697,7 +698,7 @@
 
             <div class="bloco-premium-moldura" style="background: #ffffff !important; position: relative; padding: 80px 0; z-index: 10 !important;">
                 
-                <section class="servicos-07 beneficios" style="position: relative; z-index: 2; background: transparent !important; padding-bottom: 50px !important;">
+                <section id="beneficios" class="servicos-07 beneficios" style="position: relative; z-index: 2; background: transparent !important; padding-bottom: 50px !important;">
                     <div class="onda1"></div>
                     <div class="onda2"></div>
                     <div class="onda3"></div>
@@ -773,7 +774,7 @@
                 </section>
 
 
-                <section class="clientes-parceiros-02" style="position: relative; z-index: 2; background: transparent !important; padding: 40px 20px 60px !important;">
+                <section id="modelos-de-tampoes" class="clientes-parceiros-02" style="position: relative; z-index: 2; background: transparent !important; padding: 40px 20px 60px !important;">
 
                     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 50px; width: 100%; gap: 15px; position: relative; z-index: 100;">
                         <h2 style="color: #03003D !important; font-size: 38px !important; font-weight: 400 !important; font-family: 'Archivo', sans-serif !important; text-align: center; margin: 0 auto 30px !important; line-height: 1.2; display: block !important;">
@@ -912,7 +913,7 @@
 
 
 
-            <section class="sobre-40 motivos" style="padding: 40px 20px; background: #F4F9FF; position: relative; overflow: hidden;">
+            <section id="motivos" class="sobre-40 motivos" style="padding: 40px 20px; background: #F4F9FF; position: relative; overflow: hidden;">
                 <div class="full-max" style="display: flex; align-items: center; justify-content: space-between; gap: 60px; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
                     
                     <!-- Bloco de Texto -->
@@ -1074,7 +1075,7 @@
                     });
                 </script>
             </section><!--IMAGES_ENTRY_START//-->
-            <section class="form-home-3 contato" style="background: #E0F1FE !important; padding: 100px 20px !important; position: relative; overflow: hidden; z-index: 2;">
+            <section id="contato" class="form-home-3 contato" style="background: #E0F1FE !important; padding: 100px 20px !important; position: relative; overflow: hidden; z-index: 2;">
                 <div class="full-max" style="display: flex; align-items: flex-end; justify-content: center; gap: 40px; max-width: 1200px; margin: 0 auto; flex-wrap: wrap;">
                     
                     <!-- Lado Esquerdo: Imagem do Homem -->
@@ -1194,10 +1195,6 @@
             <div style="margin-bottom: 15px;">
                 <h4 style="color: #00F0FF; font-family: 'Archivo', sans-serif !important; font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Você Relaxa, A Gente Cuida.</h4>
             </div>
-            <!-- Créditos - Marcação Laranja -->
-            <p style="color: #666; font-size: 13px; margin: 0; font-family: 'Archivo', sans-serif !important;">
-                Produzida com 💙 por <a href="https://camaly.com.br/" target="_blank" style="color: #fff; text-decoration: none; font-weight: 700;">CAMALY</a>
-            </p>
         </div>
     </footer>
 
@@ -1268,6 +1265,10 @@
             loop: true,
             speed: 1000,
             grabCursor: true,
+            breakpoints: {
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 }
+            },
             autoplay: {
               delay: 2000,
               disableOnInteraction: false,
