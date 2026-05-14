@@ -476,7 +476,7 @@
       h2 { font-size: 24px !important; line-height: 1.2 !important; text-align: center !important; }
       h3 { font-size: 18px !important; text-align: center !important; }
       p { font-size: 15px !important; line-height: 1.5 !important; text-align: center !important; }
-      section { padding: 50px 20px !important; }
+      section { padding: 40px 20px !important; }
       
       /* Hero Mobile */
       .box-banner .legenda { text-align: center !important; padding: 0 20px !important; }
@@ -484,9 +484,15 @@
       .box-banner .legenda a { width: 100% !important; min-width: 100% !important; font-size: 14px !important; }
       
       /* Seção Informativa SPA */
-      #modelos-de-tampoes > div { flex-direction: column !important; align-items: center !important; text-align: center !important; }
-      #modelos-de-tampoes > div > div { margin: 0 0 30px 0 !important; width: 100% !important; max-width: 100% !important; }
-      #modelos-de-tampoes video { width: 100% !important; border-radius: 12px !important; }
+      #informativa-spa > div { flex-direction: column !important; align-items: center !important; text-align: center !important; }
+      #informativa-spa > div > div { margin: 0 0 30px 0 !important; width: 100% !important; max-width: 100% !important; }
+      .bloco-video-spa { margin-left: 0 !important; margin-top: 20px !important; }
+      #informativa-spa video { width: 100% !important; border-radius: 12px !important; }
+      
+      /* Trabalhos Realizados */
+      .secao-trabalhos-realizados { padding: 40px 15px !important; }
+      .secao-trabalhos-realizados .full-max { margin-bottom: 30px !important; }
+      .swiper-slide img { height: 280px !important; }
       
       /* Benefícios e Motivos */
       .blc-txt, .blc-img { min-width: 100% !important; flex: 1 1 100% !important; text-align: center !important; }
@@ -494,13 +500,26 @@
       .blc-txt div { border-left: none !important; border-top: 3px solid #00F0FF !important; padding-left: 0 !important; padding-top: 20px !important; margin-bottom: 30px !important; }
       
       /* FAQ e Formulário */
+      .faq-premium { padding: 40px 15px !important; }
       .faq-premium .full-max { flex-direction: column !important; gap: 30px !important; }
       .faq-premium div { min-width: 100% !important; text-align: center !important; }
-      .bt-tabs h3 { font-size: 16px !important; }
+      .faq-premium h2 { font-size: 28px !important; margin-bottom: 30px !important; }
+      .faq-premium figure { display: flex; justify-content: center; }
+      .bt-tabs { padding: 15px !important; }
+      .bt-tabs h3 { font-size: 15px !important; }
       
+      .form-home-3 { padding: 40px 15px !important; }
       .form-home-3 .full-max { flex-direction: column !important; align-items: center !important; }
       .form-home-3 form { flex-direction: column !important; }
       .form-home-3 form div { min-width: 100% !important; }
+      
+      /* Medidas */
+      .grid-medidas { grid-template-columns: 1fr !important; gap: 20px !important; }
+      .grid-medidas figure { max-width: 320px; margin: 0 auto !important; }
+      
+      /* Cores */
+      .secao-cores { padding: 40px 15px !important; }
+      .secao-cores figure { border-radius: 10px !important; }
       
       /* Rodapé */
       .rodape-33 { flex-direction: column !important; text-align: center !important; gap: 40px !important; }
@@ -514,7 +533,7 @@
       .redes { justify-content: center !important; }
       
       /* Botões Globais */
-      .whats-global, .botao-topo-orcamento { width: 100% !important; margin: 10px 0 !important; display: flex !important; }
+      .whats-global, .botao-topo-orcamento, .cta-tampoes a, .cta-tampoes-2 a { width: 100% !important; margin: 10px 0 !important; display: flex !important; min-width: 100% !important; }
       #headerBlock { flex-direction: column !important; height: auto !important; padding: 20px 15px !important; }
       #headerBlock .topo-34 { flex-direction: column !important; gap: 15px !important; }
       .logo, #headerBlock.topo-fixo .topo-34>.logo { position: relative !important; left: auto !important; top: auto !important; transform: none !important; margin: 0 auto 10px !important; width: 180px !important; height: 60px !important; }
@@ -545,6 +564,8 @@
                     <ul class="pmenu" style="display: flex; gap: 30px; align-items: center; list-style: none; margin: 0; padding: 0;">
                         <li class="drop_ul cat-id_1"><a href="#modelos-de-tampoes" style="white-space: nowrap; font-weight: 600; color: #03003D; text-decoration: none;">Tampão Térmico para SPA</a></li>
                         <li class="drop_ul cat-id_2"><a href="#beneficios" style="white-space: nowrap; font-weight: 600; color: #03003D; text-decoration: none;">Benefícios</a></li>
+                        <li class="drop_ul cat-id_c"><a href="#cores" style="white-space: nowrap; font-weight: 600; color: #03003D; text-decoration: none;">Cores</a></li>
+                        <li class="drop_ul cat-id_m"><a href="#medidas" style="white-space: nowrap; font-weight: 600; color: #03003D; text-decoration: none;">Medidas</a></li>
                         <li class="drop_ul cat-id_3"><a href="#motivos" style="white-space: nowrap; font-weight: 600; color: #03003D; text-decoration: none;">Porque a Hydro Cover?</a></li>
                         <li class="drop_ul cat-id_5 li_enclose"><a href="#contato" class="horiz_enclose" style="white-space: nowrap; font-weight: 600; color: #03003D; text-decoration: none;">Contato</a></li>
                     </ul>
@@ -775,7 +796,7 @@
                     </div>
                 </section>
 
-                <section id="modelos-de-tampoes" style="position: relative; z-index: 2; background: #03003D !important; width: 100% !important; padding: 60px 20px 40px !important;">
+                <section id="informativa-spa" style="position: relative; z-index: 2; background: #03003D !important; width: 100% !important; padding: 60px 20px 40px !important;">
                     <div style="max-width: 1200px !important; margin: 0 auto !important; display: flex !important; align-items: flex-start !important; justify-content: space-between !important; flex-wrap: wrap !important;">
                         <div style="flex: 1 !important; min-width: 300px !important; max-width: 650px !important; color: #ffffff !important; text-align: left !important; padding-top: 20px !important;">
                             <h2 style="color: #ffffff !important; font-size: 32px !important; font-weight: 800 !important; margin-bottom: 20px !important; line-height: 1.2;">PORQUÊ OPTAR PELO TAMPÃO TÉRMICO EM MEU SPA?</h2>
@@ -794,7 +815,7 @@
                                 Solicitar Orçamento
                             </a>
                         </div>
-                        <div style="flex: 1 !important; margin-left: 40px !important; min-width: 300px !important; max-width: 380px !important;">
+                        <div class="bloco-video-spa" style="flex: 1 !important; margin-left: 40px !important; min-width: 300px !important; max-width: 380px !important;">
                              <div style="background: rgba(255,255,255,0.05) !important; border-radius: 15px !important; overflow: hidden !important; box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important; border: 1px solid rgba(255,255,255,0.1) !important;">
                                  <video autoplay muted loop playsinline style="width: 100% !important; height: auto !important; display: block !important;">
                                      <source src="assets/fotos/fotoseção02.mp4" type="video/mp4">
@@ -1000,7 +1021,18 @@
 
 
 
-            <section class="secao-medidas" id="medidas">
+            <section class="secao-cores" id="cores" style="padding: 60px 20px; background: #fff; text-align: center; position: relative; z-index: 2;">
+                <div class="full-max" style="max-width: 1200px; margin: 0 auto;">
+                    <span style="color: #00F0FF; font-weight: 800; text-transform: uppercase; font-size: 14px; letter-spacing: 2px; display: block; margin-bottom: 10px; font-family: 'Archivo', sans-serif !important;">Opções de Cores</span>
+                    <h2 style="color: #03003D; font-size: 38px; font-weight: 800; margin-bottom: 30px; font-family: 'Archivo', sans-serif !important;">Cores <b>Disponíveis</b></h2>
+                    <p style="color: #666; font-size: 16px; margin-bottom: 30px; font-family: 'Archivo', sans-serif !important;">Fabricamos seu tampão em diversas opções de cores para combinar com seu ambiente.</p>
+                    <figure style="margin: 0; display: inline-block; width: 100%; max-width: 900px; border-radius: 15px; overflow: hidden; box-shadow: 0 15px 30px rgba(0,0,0,0.1);">
+                        <img src="assets/tabela de cores.jpeg" alt="Tabela de Cores" style="width: 100%; height: auto; display: block;">
+                    </figure>
+                </div>
+            </section>
+
+            <section class="secao-medidas" id="medidas" style="padding: 60px 20px; background: #F4F9FF; position: relative; z-index: 2;">
                 <div class="full-max">
                     <h2 data-anime="fade-down">Como tirar as <b>Medidas</b></h2>
                     <p data-anime="fade-up">Siga nossas instruções para garantir o encaixe perfeito:</p>
@@ -1106,7 +1138,7 @@
                     });
                 </script>
             </section><!--IMAGES_ENTRY_START//-->
-            <section id="contato" class="form-home-3 contato" style="background: #E0F1FE !important; padding: 100px 20px !important; position: relative; overflow: hidden; z-index: 2;">
+            <section id="contato" class="form-home-3 contato" style="background: #E0F1FE !important; padding: 60px 20px !important; position: relative; overflow: hidden; z-index: 2;">
                 <div class="full-max" style="display: flex; align-items: flex-end; justify-content: center; gap: 40px; max-width: 1200px; margin: 0 auto; flex-wrap: wrap;">
                     
                     <!-- Lado Esquerdo: Imagem do Homem -->
