@@ -23,15 +23,16 @@ $(document).ready(function(){
   // Carrossel Clientes/Modelos (Oitavada, Oval, etc)
   $('.clientes-02-lista').owlCarousel({
     loop: true,
-    margin: 20,
+    margin: 10,
     nav: false,
+    dots: true,
     autoplay: true,
-    autoplayTimeout: 3000,
+    autoplayTimeout: 2000,
     autoplayHoverPause: false,
     lazyLoad: false,
     responsive:{
-        0:{ items:1 },
-        600:{ items:3 },
+        0:{ items:3 },
+        600:{ items:4 },
         1000:{ items:6 }
     }
   });
@@ -39,7 +40,7 @@ $(document).ready(function(){
   // Carrossel de Depoimentos
   $('.owl-dep8').owlCarousel({
     items: 1,
-    loop: true,
+    loop: false,
     autoplay: true,
     nav: false,
     dots: true,
