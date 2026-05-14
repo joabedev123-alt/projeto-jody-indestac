@@ -81,18 +81,24 @@
 
     /* Ajustes de Visibilidade da Logo - Tamanho Super Gigante */
     .logo, #headerBlock.topo-fixo .topo-34>.logo {
-      width: 500px !important;
-      height: 130px !important;
+      width: 420px !important;
+      height: 110px !important;
       background-size: contain !important;
       background-position: left center !important;
       display: block !important;
       visibility: visible !important;
       opacity: 1 !important;
+      margin: 0 !important;
+      position: absolute !important;
+      left: 20px !important;
+      top: 50% !important;
+      transform: translateY(-50%) !important;
+      z-index: 20 !important;
     }
 
     /* Liberando o Navbar para Customização Total */
     #headerBlock {
-      height: 135px !important;
+      height: 140px !important;
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
@@ -118,10 +124,35 @@
     #headerBlock .topo-34 {
       display: flex !important;
       align-items: center !important;
-      justify-content: space-between !important;
-      max-width: 1280px !important;
+      justify-content: center !important;
+      max-width: 100% !important;
       width: 100% !important;
-      float: none !important;
+      position: relative !important;
+      height: 100% !important;
+      padding: 0 20px !important;
+    }
+    
+    .botao-topo-orcamento {
+      position: absolute !important;
+      right: 20px !important;
+      top: 50% !important;
+      transform: translateY(-50%) !important;
+      z-index: 20 !important;
+      background-color: #25D366 !important;
+      color: #fff !important;
+      padding: 12px 25px !important;
+      border-radius: 50px !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      font-size: 14px !important;
+      transition: all 0.3s ease !important;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2) !important;
+    }
+    
+    .botao-topo-orcamento:hover {
+      background-color: #128c7e !important;
+      transform: translateY(-52%) scale(1.05) !important;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4) !important;
     }
 
     @media (max-width: 1023px) {
@@ -212,12 +243,25 @@
     }
     .beneficios article .mask {
       position: relative !important;
-      background: transparent !important;
+      background: #ffffff !important;
       padding: 0 !important;
       left: 0 !important;
       width: 100% !important;
       height: auto !important;
       transition: none !important;
+    }
+    .beneficios article, article[data-group="serv07"] {
+      background: #ffffff !important;
+      background-image: none !important;
+    }
+    .beneficios article h4 {
+      color: #03003D !important;
+    }
+    .beneficios article p {
+      color: #545454 !important;
+    }
+    .beneficios article span {
+      color: #00F0FF !important;
     }
     .beneficios article:hover .mask {
         left: 0 !important;
@@ -385,43 +429,10 @@
       margin-top: 30px;
     }
     /* Novo Botão Flutuante WhatsApp - Ultra Limpo */
-    .wpp-floating {
-      position: fixed !important;
-      bottom: 30px !important;
-      right: 30px !important;
-      width: 60px !important;
-      height: 60px !important;
-      background-color: #25d366 !important;
-      border-radius: 50% !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      z-index: 999999 !important;
-      box-shadow: 2px 2px 15px rgba(0,0,0,0.2) !important;
-      transition: all 0.3s ease !important;
-      border: none !important;
-      outline: none !important;
-      text-decoration: none !important;
-      animation: pulse-wpp 2s infinite !important;
-    }
-    .wpp-floating:hover {
-      background-color: #128c7e !important;
-      transform: scale(1.1) !important;
-    }
-    .wpp-floating svg {
-      color: #fff !important;
-      width: 35px !important;
-      height: 35px !important;
-      filter: none !important;
-    }
-    /* Reset absoluto de qualquer moldura externa */
-    .wpp-floating::before, .wpp-floating::after {
-      display: none !important;
-      content: none !important;
-    }
+
 
     /* Estilos para botões CTA com ícone WhatsApp */
-    .whats-global {
+    .whats-global, .btn-wpp {
       display: inline-flex !important;
       align-items: center !important;
       justify-content: center !important;
@@ -430,11 +441,16 @@
       outline: none !important;
       background-image: none !important;
       position: relative !important;
+      box-shadow: none !important; /* Remove sombras que podem parecer molduras */
     }
-    .whats-global svg {
+    .whats-global svg, .btn-wpp svg {
       flex-shrink: 0;
       margin-right: 8px;
     }
+
+
+
+
     /* Layout de 2 colunas para a seção Sobre */
     .sobre-22 .full-max {
       display: flex;
@@ -492,30 +508,21 @@
                     <path d="M4 7H26M4 15H26M4 23H26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </button>
+            <nav class="menu nav">
+                    <h2 style="display: none;">Navegação - Indestac</h2>
+                    <ul class="pmenu" style="display: flex; gap: 30px; align-items: center; list-style: none; margin: 0; padding: 0;">
+                        <li class="drop_ul cat-id_1"><a href="#modelos-de-tampoes" style="white-space: nowrap; font-weight: 600; color: #03003D; text-decoration: none;">Tampão Térmico para SPA</a></li>
+                        <li class="drop_ul cat-id_2"><a href="#beneficios" style="white-space: nowrap; font-weight: 600; color: #03003D; text-decoration: none;">Benefícios</a></li>
+                        <li class="drop_ul cat-id_3"><a href="#motivos" style="white-space: nowrap; font-weight: 600; color: #03003D; text-decoration: none;">Porque a Hydro Cover?</a></li>
+                        <li class="drop_ul cat-id_5 li_enclose"><a href="#contato" class="horiz_enclose" style="white-space: nowrap; font-weight: 600; color: #03003D; text-decoration: none;">Contato</a></li>
+                    </ul>
+                </nav>
 
-                <div class="topo-right" style="display: flex; align-items: center; gap: 40px; justify-content: flex-end;">
-                    <nav class="menu nav">
-                        <h2>Navegação - Indestac</h2>
-                        <ul class="pmenu">
-                            <li class="drop_ul cat-id_1"><a href="#modelos-de-tampoes">Tampão
-                                    Térmico para SPA</a></li>
-                            <li class="drop_ul cat-id_2"><a href="#beneficios">Benefícios</a>
-                            </li>
-                            <li class="drop_ul cat-id_3"><a href="#motivos">Porque a
-                                    hydro cover?</a></li>
-                            <li class="drop_ul cat-id_5 li_enclose"><a href="#contato"
-                                    class="horiz_enclose">Contato</a></li>
-                        </ul>
-                    </nav>
-
-                    <a href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de mais informações"
-                        title="Solicitar orçamento" class="whats-global botao-topo-orcamento" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.06 3.973L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
-                        Solicitar Orçamento</a>
-                </div>
-            </div>
+                <a href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de mais informações"
+                    title="Solicitar orçamento" class="whats-global botao-topo-orcamento" target="_blank" style="white-space: nowrap; flex-shrink: 0;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.06 3.973L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                    Solicitar Orçamento</a>
         </div>
-
     </header>
     <div id="mainBlock">
 
@@ -544,18 +551,7 @@
                                     <div class="legenda">
                                         <h2><b>Você Relaxa,</b> A Gente Cuida.</h2>
 
-                                        <span>
 
-
-                                            <a href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de mais informações"
-                                                title="Fale com um especialista" class="whats-global btn-wpp"
-                                                target="_blank">
-                                                
-                                                Fale com um especialista</a>
-
-
-
-                                        </span>
 
                                     </div>
 
@@ -572,18 +568,7 @@
                                     <div class="legenda">
                                         <h2><b>Você Relaxa,</b> A Gente Cuida.</h2>
 
-                                        <span>
 
-
-                                            <a href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de mais informações"
-                                                title="Fale com um especialista" class="whats-global btn-wpp"
-                                                target="_blank">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.06 3.973L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
-                                                Fale com um especialista</a>
-
-
-
-                                        </span>
 
                                     </div>
 
@@ -600,23 +585,9 @@
                                     <div class="legenda">
                                         <h2><b>Você Relaxa,</b> A Gente Cuida.</h2>
 
-                                        <span>
-
-
-                                            <a href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de mais informações"
-                                                title="Fale com um especialista" class="whats-global btn-wpp"
-                                                target="_blank">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.06 3.973L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
-                                                Fale com um especialista</a>
 
 
 
-                                        </span>
-
-                                        <div class="owl-dots"><button role="button"
-                                                class="owl-dot active"><span></span></button><button role="button"
-                                                class="owl-dot"><span></span></button><button role="button"
-                                                class="owl-dot"><span></span></button></div>
                                     </div>
 
                                 </div>
@@ -632,18 +603,7 @@
                                     <div class="legenda">
                                         <h2><b>Você Relaxa,</b> A Gente Cuida.</h2>
 
-                                        <span>
 
-
-                                            <a href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de mais informações"
-                                                title="Fale com um especialista" class="whats-global btn-wpp"
-                                                target="_blank">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.06 3.973L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
-                                                Fale com um especialista</a>
-
-
-
-                                        </span>
 
                                     </div>
 
@@ -660,18 +620,7 @@
                                     <div class="legenda">
                                         <h2><b>Você Relaxa,</b> A Gente Cuida.</h2>
 
-                                        <span>
 
-
-                                            <a href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de mais informações"
-                                                title="Fale com um especialista" class="whats-global btn-wpp"
-                                                target="_blank">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.06 3.973L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
-                                                Fale com um especialista</a>
-
-
-
-                                        </span>
 
                                     </div>
 
@@ -688,18 +637,7 @@
                                     <div class="legenda">
                                         <h2><b>Você Relaxa,</b> A Gente Cuida.</h2>
 
-                                        <span>
 
-
-                                            <a href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de mais informações"
-                                                title="Fale com um especialista" class="whats-global btn-wpp"
-                                                target="_blank">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.06 3.973L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
-                                                Fale com um especialista</a>
-
-
-
-                                        </span>
 
                                     </div>
 
@@ -716,18 +654,7 @@
                                     <div class="legenda">
                                         <h2><b>Você Relaxa,</b> A Gente Cuida.</h2>
 
-                                        <span>
 
-
-                                            <a href="https://wa.me/5511983225770?text=Olá, vim pelo site e gostaria de mais informações"
-                                                title="Fale com um especialista" class="whats-global btn-wpp"
-                                                target="_blank">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.06 3.973L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
-                                                Fale com um especialista</a>
-
-
-
-                                        </span>
 
                                     </div>
 
@@ -748,7 +675,7 @@
 	Livedate: 23.01.2024 14:59:15 / Killdate: 23.01.2034 14:59:15 
 -->
 
-            <div class="bloco-premium-moldura" style="background: #E0F1FE !important; position: relative; padding: 80px 0; z-index: 10 !important;">
+            <div class="bloco-premium-moldura" style="background: #ffffff !important; position: relative; padding: 80px 0; z-index: 10 !important;">
                 
                 <section class="servicos-07 beneficios" style="position: relative; z-index: 2; background: transparent !important; padding-bottom: 50px !important;">
                     <div class="onda1"></div>
@@ -775,7 +702,7 @@
                                 <div class="icone" style="margin-bottom: 15px !important;">
                                     <img src="assets/img/icon-temperatura.png" alt="Temperatura" style="width: 50px !important;">
                                 </div>
-                                <span style="color: #00F0FF !important; font-weight: 800 !important; text-transform: uppercase !important; font-size: 12px !important; letter-spacing: 1px !important;">Economia</span>
+                                <span style="color: #00F0FF !important; font-weight: 800 !important; text-transform: uppercase !important; font-size: 12px !important; letter-spacing: 1px !important;">Temperatura & Economia</span>
                                 <h4 style="color: #03003D !important; font-size: 20px !important; font-weight: 700 !important; margin: 8px 0 !important; line-height: 1.3 !important;">Ajuda a manter a temperatura da água</h4>
                                 <div class="beneficio-linha" style="background: #00F0FF !important; width: 40px !important; height: 3px !important; margin: 15px 0 !important;"></div>
                                 <p style="color: #545454 !important; font-size: 15px !important; line-height: 1.5 !important;">Conserve a temperatura da água por mais tempo economizando energia.</p>
@@ -787,7 +714,7 @@
                                 <div class="icone" style="margin-bottom: 15px !important;">
                                     <img src="assets/img/icon-sujeira.png" alt="Sujeira" style="width: 50px !important;">
                                 </div>
-                                <span style="color: #00F0FF !important; font-weight: 800 !important; text-transform: uppercase !important; font-size: 12px !important; letter-spacing: 1px !important;">Higiene</span>
+                                <span style="color: #00F0FF !important; font-weight: 800 !important; text-transform: uppercase !important; font-size: 12px !important; letter-spacing: 1px !important;">Sujeira & Higiene</span>
                                 <h4 style="color: #03003D !important; font-size: 20px !important; font-weight: 700 !important; margin: 8px 0 !important; line-height: 1.3 !important;">Evita o acúmulo de sujeira</h4>
                                 <div class="beneficio-linha" style="background: #00F0FF !important; width: 40px !important; height: 3px !important; margin: 15px 0 !important;"></div>
                                 <p style="color: #545454 !important; font-size: 15px !important; line-height: 1.5 !important;">Economize no uso de produtos químicos e manutenção.</p>

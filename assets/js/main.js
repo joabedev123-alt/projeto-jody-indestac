@@ -8,7 +8,7 @@ $(document).ready(function(){
     autoplayHoverPause: true,
     animateOut: 'fadeOut',
     nav: false,
-    dots: true
+    dots: false
   });
 
   // Carrossel Sobre
